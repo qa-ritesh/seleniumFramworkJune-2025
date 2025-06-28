@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[*** Chrome Browser Initiating ***]]>
+    </line>
+    <line>
+      <![CDATA[*** Chrome Browser Started ***]]>
+    </line>
+    <line>
+      <![CDATA[*** Reading Config File For QA Env Setup ***]]>
+    </line>
+    <line>
+      <![CDATA[*** Chrome Browser Closing ***]]>
+    </line>
+    <line>
+      <![CDATA[*** Chrome Browser Closed ***]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-06-28T00:08:51 IST" name="Default suite" finished-at="2025-06-28T00:08:58 IST" duration-ms="7157">
+    <groups>
+    </groups>
+    <test started-at="2025-06-28T00:08:51 IST" name="Default test" finished-at="2025-06-28T00:08:58 IST" duration-ms="7157">
+      <class name="testcases.LoginApplication">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginApplication@32502377]" started-at="2025-06-28T00:08:51 IST" name="setup" finished-at="2025-06-28T00:08:55 IST" duration-ms="3570" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[*** Chrome Browser Initiating ***]]>
+            </line>
+            <line>
+              <![CDATA[*** Chrome Browser Started ***]]>
+            </line>
+            <line>
+              <![CDATA[*** Reading Config File For QA Env Setup ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginWithValidCreds()[pri:1, instance:testcases.LoginApplication@32502377]" started-at="2025-06-28T00:08:55 IST" name="loginWithValidCreds" finished-at="2025-06-28T00:08:58 IST" duration-ms="3248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCreds -->
+        <test-method signature="validateFooterSocialIcons()[pri:2, instance:testcases.LoginApplication@32502377]" started-at="2025-06-28T00:08:58 IST" name="validateFooterSocialIcons" finished-at="2025-06-28T00:08:58 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFooterSocialIcons -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginApplication@32502377]" started-at="2025-06-28T00:08:58 IST" name="tearDown" finished-at="2025-06-28T00:08:58 IST" duration-ms="272" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[*** Chrome Browser Closing ***]]>
+            </line>
+            <line>
+              <![CDATA[*** Chrome Browser Closed ***]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.LoginApplication -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

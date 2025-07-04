@@ -31,4 +31,16 @@ public class LoginApplication extends BaseClass {
 
 	}
 
+	@Test(priority = 3)
+	public void clickOnFooterLink() {
+		/*
+		 * Get the icon via List Iterate and Perform Click Use getWindowHnadlws and
+		 * capture all window id Iterate Window Handles and capture Some text from each
+		 * window to Assert correct landing close
+		 */
+		login.clicklickOnSocialIcons();
+		login.isSocialWIndowDisplayed("Selenium Webdriver questions and answers | Facebook");
+
+	}
+
 }

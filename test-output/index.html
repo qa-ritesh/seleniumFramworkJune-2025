@@ -7,7 +7,7 @@
 
     <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
     <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,8 +21,7 @@
      -->
   </head>
 
-  <body>
-    <div class="top-banner-root">
+  <body>    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
@@ -51,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ritesh.ranjan\AppData\Local\Temp\testng-eclipse-1338026702\testng-customsuite.xml</span>
+                    <span>testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +101,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.LoginApplication" class="method navigator-link" hash-for-method="clickOnFooterLink">clickOnFooterLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="testcases.LoginApplication" class="method navigator-link" hash-for-method="loginWithValidCreds">loginWithValidCreds</a> <!-- method navigator-link -->
@@ -132,6 +136,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="clickOnFooterLink">
+                  </a> <!-- clickOnFooterLink -->
+                  <span class="method-name">clickOnFooterLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="loginWithValidCreds">
                   </a> <!-- loginWithValidCreds -->
                   <span class="method-name">loginWithValidCreds</span>
@@ -149,7 +160,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ritesh.ranjan\AppData\Local\Temp\testng-eclipse-1338026702\testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse--1802966199/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -198,20 +209,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginWithValidCreds')
+data.setCell(0, 1, 'clickOnFooterLink')
 data.setCell(0, 2, 'testcases.LoginApplication')
-data.setCell(0, 3, 3248);
+data.setCell(0, 3, 10879);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateFooterSocialIcons')
+data.setCell(1, 1, 'loginWithValidCreds')
 data.setCell(1, 2, 'testcases.LoginApplication')
-data.setCell(1, 3, 23);
+data.setCell(1, 3, 3016);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateFooterSocialIcons')
+data.setCell(2, 2, 'testcases.LoginApplication')
+data.setCell(2, 3, 14);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -244,15 +259,19 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginWithValidCreds</span>
-                <span class="method-start">3591 ms</span>
+                <span class="method-start">2481 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateFooterSocialIcons</span>
-                <span class="method-start">6843 ms</span>
+                <span class="method-start">5501 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickOnFooterLink</span>
+                <span class="method-start">5518 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6868 ms</span>
+                <span class="method-start">16399 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

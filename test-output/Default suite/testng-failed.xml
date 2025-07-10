@@ -7,7 +7,9 @@
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
+          <include name="clickOnFooterLink"/>
           <include name="validateFooterSocialIcons"/>
+          <include name="loginWithValidCreds" invocation-numbers="0"/>
         </methods>
       </class> <!-- testcases.LoginApplication -->
     </classes>

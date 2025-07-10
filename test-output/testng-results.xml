@@ -17,12 +17,12 @@
       <![CDATA[*** Chrome Browser Closed ***]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-07-04T21:03:42 IST" name="Default suite" finished-at="2025-07-04T21:03:58 IST" duration-ms="16521">
+  <suite started-at="2025-07-09T23:45:35 IST" name="Suite" finished-at="2025-07-09T23:45:53 IST" duration-ms="17834">
     <groups>
     </groups>
-    <test started-at="2025-07-04T21:03:42 IST" name="Default test" finished-at="2025-07-04T21:03:58 IST" duration-ms="16521">
-      <class name="testcases.LoginApplication">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginApplication@3754a4bf]" started-at="2025-07-04T21:03:42 IST" name="setup" finished-at="2025-07-04T21:03:44 IST" duration-ms="2473" status="PASS">
+    <test started-at="2025-07-09T23:45:35 IST" name="Test" finished-at="2025-07-09T23:45:53 IST" duration-ms="17834">
+      <class name="testcases.LoginApplicationTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginApplicationTest@5b7a5baa]" started-at="2025-07-09T23:45:35 IST" name="setup" finished-at="2025-07-09T23:45:37 IST" duration-ms="1794" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[*** Chrome Browser Initiating ***]]>
@@ -35,19 +35,31 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginWithValidCreds()[pri:1, instance:testcases.LoginApplication@3754a4bf]" started-at="2025-07-04T21:03:44 IST" name="loginWithValidCreds" finished-at="2025-07-04T21:03:47 IST" duration-ms="3016" status="PASS">
+        <test-method signature="loginWithValidCreds(java.lang.String,java.lang.String)[pri:1, instance:testcases.LoginApplicationTest@5b7a5baa]" started-at="2025-07-09T23:45:38 IST" name="loginWithValidCreds" data-provider="testData" finished-at="2025-07-09T23:45:41 IST" duration-ms="3608" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jj@mail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[jj@123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCreds -->
-        <test-method signature="validateFooterSocialIcons()[pri:2, instance:testcases.LoginApplication@3754a4bf]" started-at="2025-07-04T21:03:47 IST" name="validateFooterSocialIcons" finished-at="2025-07-04T21:03:47 IST" duration-ms="14" status="PASS">
+        <test-method signature="validateFooterSocialIcons()[pri:2, instance:testcases.LoginApplicationTest@5b7a5baa]" started-at="2025-07-09T23:45:41 IST" name="validateFooterSocialIcons" finished-at="2025-07-09T23:45:41 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateFooterSocialIcons -->
-        <test-method signature="clickOnFooterLink()[pri:3, instance:testcases.LoginApplication@3754a4bf]" started-at="2025-07-04T21:03:47 IST" name="clickOnFooterLink" finished-at="2025-07-04T21:03:58 IST" duration-ms="10879" status="PASS">
+        <test-method signature="clickOnFooterLink()[pri:3, instance:testcases.LoginApplicationTest@5b7a5baa]" started-at="2025-07-09T23:45:41 IST" name="clickOnFooterLink" finished-at="2025-07-09T23:45:53 IST" duration-ms="11770" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnFooterLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginApplication@3754a4bf]" started-at="2025-07-04T21:03:58 IST" name="tearDown" finished-at="2025-07-04T21:03:58 IST" duration-ms="105" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginApplicationTest@5b7a5baa]" started-at="2025-07-09T23:45:53 IST" name="tearDown" finished-at="2025-07-09T23:45:53 IST" duration-ms="101" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[*** Chrome Browser Closing ***]]>
@@ -57,7 +69,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.LoginApplication -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testcases.LoginApplicationTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

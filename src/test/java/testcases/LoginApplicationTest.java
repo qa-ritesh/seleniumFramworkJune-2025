@@ -1,22 +1,27 @@
 package testcases;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import base.BaseClass;
+import dataProviders.DataProviders;
+import helper.ExcelUtility;
 import pages.DashboardPage;
 import pages.LoginPage;
 
-public class LoginApplication extends BaseClass {
+public class LoginApplicationTest extends BaseClass {
 
 	LoginPage login = null;
 
-	@Test(priority = 1)
-	public void loginWithValidCreds() {
+	@Test(priority = 1, dataProvider = "testData", dataProviderClass = DataProviders.class)
+	public void loginWithValidCreds(String user_email, String password) {
 
 		login = new LoginPage(driver);
-		DashboardPage dashboard = login.loginToApplication("admin@email.com", "admin@123");
+		DashboardPage dashboard = login.loginToApplication(user_email, password);
 
 		Assert.assertTrue(dashboard.isWelcomeMsgDisplayed(), "*** Login Failed ***");
 
